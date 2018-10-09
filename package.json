@@ -1,5 +1,5 @@
 {
-  "name": "create-react-library",
+  "name": "ui-library-test",
   "version": "1.1.0",
   "description": "React NPM library starter kit based on Facebook's create react app",
   "main": "build/index.js",
@@ -11,13 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DimiMikadze/create-react-library.git"
+    "url": "git+https://github.com/thechinnster/library-test.git"
   },
   "author": "Dimi Mikadze <dimi@udilia.com>",
   "bugs": {
-    "url": "https://github.com/DimiMikadze/create-react-library/issues"
+    "url": "https://github.com/thechinnster/library-test.git/issues"
   },
-  "homepage": "https://github.com/DimiMikadze/create-react-library#readme",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
