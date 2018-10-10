@@ -1,6 +1,6 @@
 {
   "name": "ui-library-test",
-  "version": "0.2-alpha",
+  "version": "0.2",
   "description": "React NPM library starter kit based on Facebook's create react app",
   "main": "build/index.js",
   "scripts": {
