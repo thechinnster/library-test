@@ -7,9 +7,9 @@ import { withKnobs, object, text, array, boolean, number } from "@storybook/addo
 import readme from "./README.md"
 
 
-// const menuSelect = (selection) => {
-//   console.log(`${selection} selected`);
-// }
+const onChange = (selection) => {
+  console.log(`${selection} selected`);
+}
 
 const radios = [
   {value: 'Option1', label: 'Option 1' },
@@ -25,6 +25,7 @@ storiesOf("Radio Group", module)
   .addDecorator(withKnobs)
   .add("No Preselect", () => (
     <RadioGroup
+      onChange={onChange}
       name="options"
       label="Options"
       radios={object("radios", radios)}
@@ -32,6 +33,7 @@ storiesOf("Radio Group", module)
   ))
   .add("With Preselect", () => (
     <RadioGroup
+      onChange={onChange}
       name="options"
       label="Options"
        defaultValue="Option1"
@@ -40,6 +42,7 @@ storiesOf("Radio Group", module)
   ))
   .add("Disabled option", () => (
     <RadioGroup
+      onChange={onChange}
       name="options" groupLabel="Options"
       label="Option1"
       radios={object("radios", radiosWithDisabled)}

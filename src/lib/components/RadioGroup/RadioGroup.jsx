@@ -23,12 +23,17 @@ const styles = theme => ({
 
 class RadioButtonsGroup extends React.Component {
   state = {
-    value: this.props.defaultValue
+    value: this.props.defaultValue || null
   };
 
   handleChange = event => {
     this.setState({ value: event.target.value });
+    this.props.onChange(event.target.value);
   };
+
+  componentDidMount(){
+    this.props.onChange(this.state.value);
+  } 
 
   render() {
     const { classes, radios, helperText, defaultValue } = this.props;
